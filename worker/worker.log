@@ -1,0 +1,162 @@
+[Agent] Worker started. Polling for jobs...
+[Agent] Starting job 0148bf83-afcb-4760-bdfe-7aa54fc4ad53 for https://www.youtube.com/watch?v=Rfylh5wwReI
+[Director] Skimming match (166 mins) at 1 frame every 30s...
+[Director] Raw response: ```json
+{
+  "hotZones": [
+    {
+      "startSec": 0,
+      "reason": "Match kickoff and initial tactical setups. Liverpool employs their characteristic high press while PSG looks to exploit space behind the fullbacks.",
+      "intensity": 6
+    },
+    {
+      "startSec": 2130,
+      "reason": "PSG scores to take a 1-0 lead at Anfield. This goal significantly alters the aggregate score, forcing Liverpool to transition into a more aggressive attacking formation.",
+      "intensity": 9
+    },
+    {
+      "startSec": 2970,
+      "reason": "End of the first half. A critical tactical interval where both managers evaluate performance; PSG leads 1-0 at the break.",
+      "intensity": 5
+    },
+    {
+      "startSec": 3300,
+      "reason": "Second half kickoff. Liverpool emerges with intensified pressure and higher defensive lines to chase the necessary equalizer.",
+      "intensity": 7
+    },
+    {
+      "startSec": 5130,
+      "reason": "Liverpool scores a late equalizer (1-1). This goal levels the aggregate score and shifts the psychological momentum entirely in favor of the home side as regulation time nears its end.",
+      "intensity": 10
+    },
+    {
+      "startSec": 5430,
+      "reason": "End of regular time. Players and coaching staff regroup on the pitch to prepare for the high-pressure penalty shootout after a 1-1 draw in the match.",
+      "intensity": 7
+    },
+    {
+      "startSec": 5580,
+      "reason": "Start of the penalty shootout. The ultimate test of individual skill and mental fortitude to decide which team advances in the UEFA Champions League.",
+      "intensity": 9
+    },
+    {
+      "startSec": 6120,
+      "reason": "Final decisive penalty taken in the shootout. Liverpool players celebrate as they secure victory and progression to the next round of the tournament.",
+      "intensity": 10
+    }
+  ]
+}
+```
+[Director] Parsed JSON: {
+  hotZones: [
+    {
+      startSec: 0,
+      reason: 'Match kickoff and initial tactical setups. Liverpool employs their characteristic high press while PSG looks to exploit space behind the fullbacks.',
+      intensity: 6
+    },
+    {
+      startSec: 2130,
+      reason: 'PSG scores to take a 1-0 lead at Anfield. This goal significantly alters the aggregate score, forcing Liverpool to transition into a more aggressive attacking formation.',
+      intensity: 9
+    },
+    {
+      startSec: 2970,
+      reason: 'End of the first half. A critical tactical interval where both managers evaluate performance; PSG leads 1-0 at the break.',
+      intensity: 5
+    },
+    {
+      startSec: 3300,
+      reason: 'Second half kickoff. Liverpool emerges with intensified pressure and higher defensive lines to chase the necessary equalizer.',
+      intensity: 7
+    },
+    {
+      startSec: 5130,
+      reason: 'Liverpool scores a late equalizer (1-1). This goal levels the aggregate score and shifts the psychological momentum entirely in favor of the home side as regulation time nears its end.',
+      intensity: 10
+    },
+    {
+      startSec: 5430,
+      reason: 'End of regular time. Players and coaching staff regroup on the pitch to prepare for the high-pressure penalty shootout after a 1-1 draw in the match.',
+      intensity: 7
+    },
+    {
+      startSec: 5580,
+      reason: 'Start of the penalty shootout. The ultimate test of individual skill and mental fortitude to decide which team advances in the UEFA Champions League.',
+      intensity: 9
+    },
+    {
+      startSec: 6120,
+      reason: 'Final decisive penalty taken in the shootout. Liverpool players celebrate as they secure victory and progression to the next round of the tournament.',
+      intensity: 10
+    }
+  ]
+}
+[Tactician] Scouting window at 5130s...
+[Tactician] Raw response at 5130s: { "interestScore": 8, "startOffsetSec": 0, "endOffsetSec": 20, "commentary": "Liverpool orchestrating a masterful move here! PSG holding firm, but the pressure is mounting! Tactical brilliance on display in this Champions League clash. Who will blink first?" }
+[Tactician] Parsed JSON at 5130s: {
+  interestScore: 8,
+  startOffsetSec: 0,
+  endOffsetSec: 20,
+  commentary: 'Liverpool orchestrating a masterful move here! PSG holding firm, but the pressure is mounting! Tactical brilliance on display in this Champions League clash. Who will blink first?'
+}
+[Tactician] Scouting window at 6120s...
+[Tactician] Raw response at 6120s: ```json
+{
+  "interestScore": 8,
+  "startOffsetSec": 0,
+  "endOffsetSec": 20,
+  "commentary": "Liverpool with the corner! PSG scrambled, desperate defending! Anfield is a cauldron of noise as the Reds search for that decisive breakthrough. European nights, there's nothing like it!"
+}
+```
+[Tactician] Parsed JSON at 6120s: {
+  interestScore: 8,
+  startOffsetSec: 0,
+  endOffsetSec: 20,
+  commentary: "Liverpool with the corner! PSG scrambled, desperate defending! Anfield is a cauldron of noise as the Reds search for that decisive breakthrough. European nights, there's nothing like it!"
+}
+[Tactician] Scouting window at 2130s...
+[Tactician] Raw response at 2130s: ```json
+{
+  "interestScore": 9,
+  "startOffsetSec": 0,
+  "endOffsetSec": 20,
+  "commentary": "HE'S THROUGH! A thunderous strike from Liverpool sends Anfield into absolute raptures! PSG are stunned! This is what the Champions League is all about. Incredible scenes!"
+}
+```
+[Tactician] Parsed JSON at 2130s: {
+  interestScore: 9,
+  startOffsetSec: 0,
+  endOffsetSec: 20,
+  commentary: "HE'S THROUGH! A thunderous strike from Liverpool sends Anfield into absolute raptures! PSG are stunned! This is what the Champions League is all about. Incredible scenes!"
+}
+[Tactician] Scouting window at 5580s...
+[Tactician] Raw response at 5580s: ```json
+{
+  "interestScore": 9,
+  "startOffsetSec": 5,
+  "endOffsetSec": 30,
+  "commentary": "PSG probing the Liverpool lines, but the Reds are organized! Tactical chess at its most intense! A single mistake could decide this massive Champions League night!"
+}
+```
+[Tactician] Parsed JSON at 5580s: {
+  interestScore: 9,
+  startOffsetSec: 5,
+  endOffsetSec: 30,
+  commentary: 'PSG probing the Liverpool lines, but the Reds are organized! Tactical chess at its most intense! A single mistake could decide this massive Champions League night!'
+}
+[Tactician] Scouting window at 3300s...
+[Tactician] Raw response at 3300s: ```json
+{
+  "interestScore": 8,
+  "startOffsetSec": 3,
+  "endOffsetSec": 25,
+  "commentary": "The tension is palpable at Anfield! Liverpool suffocating PSG with their trademark press! It's a tactical battle for the ages in this massive Champions League second leg!"
+}
+```
+[Tactician] Parsed JSON at 3300s: {
+  interestScore: 8,
+  startOffsetSec: 3,
+  endOffsetSec: 25,
+  commentary: "The tension is palpable at Anfield! Liverpool suffocating PSG with their trademark press! It's a tactical battle for the ages in this massive Champions League second leg!"
+}
+[Agent] Job 0148bf83-afcb-4760-bdfe-7aa54fc4ad53 completed successfully.
