@@ -178,21 +178,9 @@ async function synthesizeSpeech({ apiKey, text, voice }) {
 
 // --- Main Loop ---
 
-async function notify(message) {
-  try {
-    await fetch('https://ntfy.sh/gemini-sports-agent-2026-sb', {
-      method: 'POST',
-      body: message
-    });
-  } catch (e) {
-    console.error('Notification failed', e);
-  }
-}
-
 async function processJob(job, supabase, ai, config) {
   const { id, video_url, video_id } = job;
   console.log(`[Agent] Starting job ${id} for ${video_url}`);
-  await notify(`⚽ Starting analysis for: ${video_url}`);
 
   try {
     await supabase.from('jobs').update({ status: 'skimming' }).eq('id', id);
@@ -255,12 +243,10 @@ async function processJob(job, supabase, ai, config) {
 
     await supabase.from('jobs').update({ status: 'completed' }).eq('id', id);
     console.log(`[Agent] Job ${id} completed successfully.`);
-    await notify(`✅ Match Analysis Complete! Highlights are ready for ${video_id}`);
 
   } catch (err) {
     console.error(`[Agent] Job ${id} failed:`, err);
     await supabase.from('jobs').update({ status: 'failed', error_message: err.message }).eq('id', id);
-    await notify(`❌ Job Failed: ${err.message}`);
   }
 }
 
